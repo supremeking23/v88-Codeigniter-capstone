@@ -1,0 +1,86 @@
+@background-darkblue: #022335;
+
+header {
+	background: @background-darkblue;
+	padding: 20px;
+}
+
+.btn-outline-white {
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn-outline-white:hover {
+	color: #212529;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.carousel-caption {
+	// position: absolute;
+	// right: 2%;
+	// bottom: 30px;
+	// left: 2%;
+	// z-index: 10;
+	// padding-top: 20px;
+	// padding-bottom: 20px;
+	color: #000;
+	text-align: left;
+
+	position: absolute;
+	right: 15%;
+	bottom: 50px;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+//image-one
+.feature-image {
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+	// bottom: 0;
+	background-size: cover;
+	background-position: left top;
+	background-color: #f8f8f8;
+	background-repeat: no-repeat;
+	height: 200px;
+	margin: 0 0 1rem 0;
+	padding: 2rem;
+}
+
+.image-one {
+	background-color: #ebebea;
+	background-image: url("https://demo2.drfuri.com/martfury13/wp-content/uploads/sites/54/2018/03/bn12.jpg");
+}
+
+.image-two {
+	background-color: #ebebea;
+	background-image: url("https://demo2.drfuri.com/martfury13/wp-content/uploads/sites/54/2018/03/bn13.jpg");
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	height: 100px;
+	width: 100px;
+	// outline: black;
+	background-size: 100%, 100%;
+	border-radius: 50%;
+	// border: 1px solid black;
+	background-image: none;
+}
+
+.carousel-control-next-icon:after {
+	content: ">";
+	font-size: 55px;
+	color: @background-darkblue;
+}
+
+.carousel-control-prev-icon:after {
+	content: "<";
+	font-size: 55px;
+	color: @background-darkblue;
+}
