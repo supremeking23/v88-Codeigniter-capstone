@@ -36,32 +36,6 @@ header {
 	padding-bottom: 20px;
 }
 
-//image-one
-.feature-image {
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	// right: 0;
-	// bottom: 0;
-	background-size: cover;
-	background-position: left top;
-	background-color: #f8f8f8;
-	background-repeat: no-repeat;
-	height: 200px;
-	margin: 0 0 1rem 0;
-	padding: 2rem;
-}
-
-.image-one {
-	background-color: #ebebea;
-	background-image: url("https://demo2.drfuri.com/martfury13/wp-content/uploads/sites/54/2018/03/bn12.jpg");
-}
-
-.image-two {
-	background-color: #ebebea;
-	background-image: url("https://demo2.drfuri.com/martfury13/wp-content/uploads/sites/54/2018/03/bn13.jpg");
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
 	height: 100px;
@@ -83,4 +57,208 @@ header {
 	content: "<";
 	font-size: 55px;
 	color: @background-darkblue;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-family: "slick";
+	font-size: 20px;
+	line-height: 1;
+	opacity: 0.75;
+	color: #000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+//image-one
+.feature-image {
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+	// bottom: 0;
+	background-size: cover;
+	background-position: left top;
+	background-color: #f8f8f8;
+	background-repeat: no-repeat;
+	height: 200px;
+	margin: 0 0 1rem 0;
+	padding: 1rem;
+
+	.banner-content {
+		h2 {
+			span {
+				display: block;
+				font-weight: bold;
+			}
+			font-weight: 100;
+		}
+
+		div {
+			span {
+				display: block;
+				color: #669900;
+				font-size: 18px;
+				font-weight: 600;
+			}
+		}
+
+		.cta-banner {
+			span {
+				display: inline-block;
+			}
+		}
+
+		a {
+			color: #fff;
+			background: #dd2400;
+			border-color: #dd2400;
+		}
+	}
+}
+
+.image-one {
+	background-color: #ebebea;
+	background-image: url("https://demo2.drfuri.com/martfury13/wp-content/uploads/sites/54/2018/03/bn12.jpg");
+}
+
+.image-two {
+	background-color: #ebebea;
+	background-image: url("https://demo2.drfuri.com/martfury13/wp-content/uploads/sites/54/2018/03/bn13.jpg");
+}
+
+.image-three {
+	background-color: #ebebea;
+	background-image: url("http://demo2.drfuri.com/martfury13/wp-content/uploads/sites/54/2018/03/bn14.jpg");
+}
+
+.image-four {
+	background-color: #ebebea;
+	background-image: url("http://demo2.drfuri.com/martfury13/wp-content/uploads/sites/54/2018/03/bn15.jpg");
+}
+
+.main-cta {
+	background-color: #ebebea;
+	background-image: url("http://demo2.drfuri.com/martfury13/wp-content/uploads/sites/54/2019/07/b-large.jpg");
+
+	.banner-content {
+		padding: 2rem;
+		h2 {
+			span {
+				display: block;
+				font-weight: 100;
+			}
+		}
+
+		div {
+			span {
+				display: block;
+				color: #000;
+				font-weight: 100;
+				font-size: 2rem;
+			}
+		}
+
+		.cta-banner {
+			span {
+				display: inline-block;
+			}
+		}
+
+		a {
+			color: #fff;
+			background: #dd2400;
+			border-color: #dd2400;
+		}
+
+		.price {
+			color: #669900;
+			line-height: 1;
+			font-size: 2rem;
+		}
+
+		.main-cta-description {
+			color: #999;
+		}
+	}
+}
+
+.top-category {
+	padding: 20px 0;
+	border: 1px solid #ddd;
+	.image-content {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.image-content {
+		font-size: 0.9rem;
+		.box-title {
+			font-size: 1rem;
+			a {
+				color: #000;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		ul {
+			list-style: none;
+			padding-inline-start: 0px;
+
+			li {
+				a {
+					color: #666;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.product {
+	a {
+		text-decoration: none;
+
+		h3 {
+			color: #669900;
+			font-size: 1.1rem;
+		}
+
+		h4 {
+			color: #06c;
+			font-size: 1.2rem;
+		}
+
+		color: #000;
+		font-size: 1rem;
+	}
+}
+
+// footer
+.row-icon-section {
+	&:not(:last-child) {
+		border-right: 1px solid #999;
+	}
+
+	i,
+	div {
+		display: inline-block;
+		vertical-align: top;
+	}
+	i {
+		color: red;
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.top-category {
+		.image-content {
+			font-size: 0.86rem;
+		}
+	}
 }
