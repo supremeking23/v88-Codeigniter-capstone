@@ -1,0 +1,102 @@
+@background-darkblue: #022335;
+@box-background: #ffffff;
+body {
+	background: #eee;
+}
+
+.bg-darkblue {
+	background: @background-darkblue;
+}
+
+.nav-pills {
+	background: @box-background;
+}
+
+.box {
+	background: @box-background;
+	padding: 1rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: @background-darkblue;
+}
+
+.bg-aqua {
+	background-color: #00c0ef !important;
+}
+
+.bg-green {
+	background-color: #00a65a !important;
+}
+
+.bg-yellow {
+	background-color: #f39c12 !important;
+}
+
+.bg-red {
+	background-color: #dd4b39 !important;
+}
+
+.small-box {
+	border-radius: 2px;
+	position: relative;
+	display: block;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+
+	color: #fff;
+
+	.inner {
+		padding: 1rem;
+	}
+
+	.icon {
+		transition: all 0.3s linear;
+		position: absolute;
+		top: -10px;
+		right: 10px;
+		z-index: 0;
+		font-size: 90px;
+		color: rgba(0, 0, 0, 0.15);
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	.small-box-footer {
+		position: relative;
+		text-align: center;
+		padding: 3px 0;
+		color: #fff;
+		color: rgba(255, 255, 255, 0.8);
+		display: block;
+		z-index: 10;
+		background: rgba(0, 0, 0, 0.1);
+		text-decoration: none;
+
+		&:hover {
+			color: #fff;
+			background: rgba(0, 0, 0, 0.15);
+		}
+	}
+}
+
+.profile-user-img {
+	margin: 0 auto;
+	width: 100px;
+	padding: 3px;
+	border: 3px solid #d2d6de;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+// .nav-pills {
+// 	a {
+// 		color: #fff;
+// 	}
+// }

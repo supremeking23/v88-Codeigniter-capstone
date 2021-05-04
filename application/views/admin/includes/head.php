@@ -10,10 +10,7 @@
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
 
-        
-       
-
-
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
         
   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -27,26 +24,18 @@
         <script src="https://supremeking23.github.io/solar-system-view-v2/slick/slick/slick.min.js"></script>
 
         
-        <link rel="stylesheet/less" type="text/css" href="<?= base_url()?>assets/less/site.less" />
+        <link rel="stylesheet/less" type="text/css" href="<?= base_url()?>assets/less/accounts.less" />
         <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
 
         <script src="<?= base_url()?>assets/js/jquery.fontstar.js"></script>
-        
+
         <script>
             $(document).ready(function(){
-                $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 5,
-                    slidesToScroll: 2
-                });
-
-                $('.star').fontstar({},function(value,self){
-
-                    console.log("hello "+value);
-                });
-
+                $("#profile").change(function(){
+                    $(".profile-user-img").attr("src",window.URL.createObjectURL(this.files[0]));
+                })
             })
         </script>
 
-        <title>Village88 Store</title>
+        <title>Village88 Store | Admin</title>
     </head>
