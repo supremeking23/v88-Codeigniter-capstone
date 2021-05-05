@@ -31,6 +31,10 @@
         <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
 
         <script src="<?= base_url()?>assets/js/jquery.fontstar.js"></script>
+
+
+
+        
         
         <script>
             $(document).ready(function(){
@@ -41,9 +45,10 @@
                 });
 
                 $('.star').fontstar({},function(value,self){
-
                     console.log("hello "+value);
                 });
+
+             
 
             })
         </script>

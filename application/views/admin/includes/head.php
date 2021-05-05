@@ -17,8 +17,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 
-
-
         <link rel="stylesheet" href="https://supremeking23.github.io/solar-system-view-v2/slick/slick/slick.css">
         <link rel="stylesheet" href="https://supremeking23.github.io/solar-system-view-v2/slick/slick/slick-theme.css">
         <script src="https://supremeking23.github.io/solar-system-view-v2/slick/slick/slick.min.js"></script>
@@ -29,11 +27,22 @@
 
         <script src="<?= base_url()?>assets/js/jquery.fontstar.js"></script>
 
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+
+
         <script>
             $(document).ready(function(){
                 $("#profile").change(function(){
                     $(".profile-user-img").attr("src",window.URL.createObjectURL(this.files[0]));
-                })
+                });
+
+                $('#summernote').summernote({
+                    placeholder: '.....',
+                    tabsize: 2,
+                    height: 100
+                });
+               
             })
         </script>
 
