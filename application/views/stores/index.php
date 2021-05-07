@@ -48,10 +48,19 @@
                 </div>
 
                 <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-12 result-count">
+                    <div class="row result-count">
+                        <div class="col-md-6">
                             <span>2</span> Products Found
                         </div>
+                        
+                            <form action="" class="filter-select-form  col-md-6 d-flex justify-content-end align-items-center">
+                                <label for="">Sorted by:</label>
+                                <select name="" id="" class="form-control">
+                                    <option value="">Price</option>
+                                    <option value="">most popular</option>
+                                </select>
+                            </form>
+                        
                     </div>
                     <div class="row mt-3 pl-3">
                         <div class="product search-product col-md-3">
