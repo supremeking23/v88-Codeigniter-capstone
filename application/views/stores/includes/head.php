@@ -33,12 +33,9 @@
 
         <script src="<?= base_url()?>assets/js/jquery.fontstar.js"></script>
 
-
-
-        
-        
         <script>
             $(document).ready(function(){
+                // slick slider
                 $('.multiple-items').slick({
                     infinite: true,
                     slidesToShow: 5,
