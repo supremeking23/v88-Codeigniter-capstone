@@ -21,4 +21,9 @@ class Stores extends CI_Controller {
 	public function index(){
 		$this->load->view('stores/index');
 	}
+
+
+	public function product_detail(){
+		$this->load->view('stores/product_detail');
+	}
 }

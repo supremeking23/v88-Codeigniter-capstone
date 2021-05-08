@@ -55,5 +55,8 @@ $route['admin/login'] = 'admins/login';
 $route['admin/users'] = 'admins/users';
 $route['admin/products'] = 'admins/products';
 
+// must have a parameter
+$route['product-detail'] = 'stores/product_detail';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

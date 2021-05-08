@@ -33,6 +33,22 @@
 
         <script src="<?= base_url()?>assets/js/jquery.fontstar.js"></script>
 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/css/lightgallery.css" integrity="sha512-I/g40Mx7U2Oepd3iHIpQRqdQGJ3vgdw0ix8LxGxX9zKv1MDizjD6dRcJ3PC1qpyfkj4rikVNcpBKcnmuJWUaTQ==" crossorigin="anonymous" />
+
+        <!-- <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script> -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js" integrity="sha512-gDBgGPXSeC2hx1W3S1CfSHbAValtLI8OArTGf0UVX7Fwb9Ak7HUE3LK9UEZxKGYVrIe0CJUVZDk9B2dIPwJ6VQ==" crossorigin="anonymous"></script>
+<!-- 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.min.js" integrity="sha512-Qpvw3WG46QyOqV/YS9BosbxEbMKPREA+QS+iWAKXfvb/87tdfsGGQdT7vqYbQzBOgLvF2I/MHMacA86oURHsCw==" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha512-rCjfoab9CVKOH/w/T6GbBxnAH5Azhy4+q1EXW5XEURefHbIkRbQ++ZR+GBClo3/d3q583X/gO4FKmOFuhkKrdA==" crossorigin="anonymous"></script> -->
+
+
+        <link rel="stylesheet" href="<?= base_url()?>assets/css/jquery.jqZoom.css">
+        <script src="<?= base_url()?>assets/js/jquery.jqZoom.js"></script>
+
+
         <script>
             $(document).ready(function(){
                 // slick slider
@@ -47,7 +63,25 @@
                 });
 
              
+                $("#lightgallery").lightGallery(); 
 
+                $(".zoom-box img").jqZoom({
+                    selectorWidth: 30,
+                    selectorHeight: 30,
+                    viewerWidth: 400,
+                    viewerHeight: 500
+                });
+
+                $(".update-qty").click(function(){
+                    let quantity = $(".quantity").html();
+                    if($(this).hasClass("add")){
+                        quantity++;    
+                    }else if($(this).hasClass("substract")){
+                        quantity--;
+                    }
+                
+                    $(".quantity").html(quantity);
+                })
             })
         </script>
 
